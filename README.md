@@ -1,6 +1,7 @@
 # SP2 Resit Auction
 
-![Auction App Screenshot](path-to-screenshot.png)
+<img width="2559" height="1317" alt="sp2-resit-screenshot" src="https://github.com/user-attachments/assets/2d209a08-5ac1-4de1-b735-774fc39a439c" />
+
 
 A modern auction web application built for the Noroff Frontend Development Semester Project 2 Resit.
 Users can browse listings, create auctions, and place bids on items.
