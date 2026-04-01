@@ -2,35 +2,107 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Listing</title>
+    <title>Listing Details | Auction</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
   </head>
-
   <body class="bg-light">
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
       <div class="container">
         <a class="navbar-brand fw-bold text-white" href="index.html">Auction</a>
-        <div class="collapse navbar-collapse justify-content-end">
-          <div id="navLinks" class="navbar-nav align-items-center gap-2"></div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul id="navLinks" class="navbar-nav align-items-center gap-2">
+            <li class="nav-item me-2">
+              <a
+                class="nav-link btn btn-outline-light text-white"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item me-2">
+              <a
+                class="nav-link btn btn-outline-success text-white"
+                href="login.html"
+                >Login</a
+              >
+            </li>
+            <li class="nav-item me-2">
+              <a
+                class="nav-link btn btn-outline-warning text-white"
+                href="register.html"
+                >Register</a
+              >
+            </li>
+            <li class="nav-item me-2">
+              <a
+                class="nav-link btn btn-outline-light text-white"
+                href="profile.html"
+                >Profile</a
+              >
+            </li>
+            <li class="nav-item me-2">
+              <a
+                class="nav-link btn btn-outline-primary text-white"
+                href="create-listing.html"
+                >Create Listing</a
+              >
+            </li>
+            <li class="nav-item me-2">
+              <a
+                class="nav-link btn btn-outline-danger text-white"
+                href="#"
+                id="logoutBtn"
+                >Logout</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
 
+    <!-- Listing Details -->
     <div class="container mt-4">
-      <div id="listing"></div>
+      <div id="listingDetails" class="bg-white p-4 rounded shadow mb-4"></div>
+
+      <!-- Bids Section -->
+      <div class="bg-white p-4 rounded shadow mb-4">
+        <h4>Bids</h4>
+        <ul id="bidsList" class="list-group mb-3"></ul>
+
+        <!-- Bid Form -->
+        <form id="bidForm" class="d-flex gap-2">
+          <input
+            type="number"
+            id="bidAmount"
+            class="form-control"
+            placeholder="Enter your bid"
+            required
+            min="0"
+          />
+          <button type="submit" class="btn btn-primary">Place Bid</button>
+        </form>
+      </div>
     </div>
 
-    <script type="module">
-      import { loadListing } from "./js/bids.js";
-      import { loadNavbar } from "./js/ui.js";
-
-      loadNavbar(true);
-      loadListing();
-    </script>
-
+    <script type="module" src="js/listing-page.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

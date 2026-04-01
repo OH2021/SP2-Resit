@@ -1,51 +1,62 @@
-import { logout } from "./auth.js";
+import { getToken, clearUser } from "./api.js";
 
-export function loadNavbar(showHome = false) {
-  const nav = document.getElementById("navLinks");
-  const user = JSON.parse(localStorage.getItem("user"));
+export function loadNavbar() {
+  const navLinks = document.getElementById("navLinks");
+  if (!navLinks) return;
 
-  if (!nav) return;
+  const token = getToken();
+  navLinks.innerHTML = ""; // Clear existing buttons
 
-  let html = "";
+  const createButton = (
+    text,
+    href,
+    classes = "btn btn-outline-light text-white",
+  ) => {
+    const li = document.createElement("li");
+    li.className = "nav-item me-2";
+    const a = document.createElement("a");
+    a.className = `nav-link ${classes}`;
+    a.href = href;
+    a.textContent = text;
+    li.appendChild(a);
+    return li;
+  };
 
-  if (showHome) {
-    html += `
-      <a href="index.html" class="nav-link text-white fw-semibold">
-        Home
-      </a>
-    `;
-  }
+  // Always show Home
+  navLinks.appendChild(createButton("Home", "index.html"));
 
-  if (user) {
-    html += `
-      <a href="create-listing.html" class="btn btn-outline-light">
-        Sell Item
-      </a>
+  if (token) {
+    // Logged in: show Profile, Create Listing, Logout
+    navLinks.appendChild(createButton("Profile", "profile.html"));
+    navLinks.appendChild(createButton("Create Listing", "create-listing.html"));
 
-      <a href="profile.html" class="btn btn-outline-info">
-        Profile
-      </a>
-
-      <button id="logoutBtn" class="btn btn-outline-danger">
-        Logout
-      </button>
-    `;
+    const logoutLi = document.createElement("li");
+    logoutLi.className = "nav-item me-2";
+    const logoutA = document.createElement("a");
+    logoutA.className = "nav-link btn btn-outline-danger text-white";
+    logoutA.href = "#";
+    logoutA.textContent = "Logout";
+    logoutA.addEventListener("click", (e) => {
+      e.preventDefault();
+      clearUser();
+      window.location.href = "index.html";
+    });
+    logoutLi.appendChild(logoutA);
+    navLinks.appendChild(logoutLi);
   } else {
-    html += `
-      <a href="login.html" class="btn btn-outline-light">
-        Login
-      </a>
+    // Logged out: show Login/Register + disabled Profile + Create redirecting to login
+    navLinks.appendChild(
+      createButton("Login", "login.html", "btn btn-outline-success text-white"),
+    );
+    navLinks.appendChild(
+      createButton(
+        "Register",
+        "register.html",
+        "btn btn-outline-warning text-white",
+      ),
+    );
 
-      <a href="register.html" class="btn btn-warning">
-        Register
-      </a>
-    `;
-  }
-
-  nav.innerHTML = html;
-
-  const logoutBtn = document.getElementById("logoutBtn");
-  if (logoutBtn) {
-    logoutBtn.addEventListener("click", logout);
+    navLinks.appendChild(createButton("Profile", "login.html"));
+    navLinks.appendChild(createButton("Create Listing", "login.html"));
   }
 }

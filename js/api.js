@@ -1,6 +1,7 @@
 // js/api.js
 
 export const API = "https://v2.api.noroff.dev";
+export const API_KEY = "592038c7-3760-413c-84c5-8187636356e7";
 
 /*
 GET TOKEN
@@ -37,7 +38,9 @@ export function clearUser() {
 API REQUEST HELPER
 */
 export async function request(endpoint, method = "GET", body = null) {
-  const headers = {};
+  const headers = {
+    "X-Noroff-API-Key": API_KEY, // 🔑 Required for profiles & some endpoints
+  };
 
   if (body) {
     headers["Content-Type"] = "application/json";
