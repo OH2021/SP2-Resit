@@ -17,9 +17,9 @@ export async function loadListings(search = "", reset = false) {
 
     const token = getToken();
 
-    // Fetch all public listings
+    // Fetch all public listings (including all users' listings)
     const res = await request(
-      "/auction/listings?limit=100&_bids=true&_seller=true",
+      "/auction/listings?limit=100&_bids=true&_seller=true&_active=true",
     );
     let listings = res.data || [];
 
@@ -57,6 +57,9 @@ export async function loadListings(search = "", reset = false) {
 
       return new Date(b.endsAt) - new Date(a.endsAt);
     });
+
+    // Reverse the list so newest appears first
+    listings.reverse();
 
     allListings = listings;
 
