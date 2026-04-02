@@ -13,7 +13,6 @@ Users can browse listings, create auctions, and place bids on items.
 
 The application allows users to:
 
-<<<<<<< HEAD
 - Browse available auction listings
 - View detailed item pages
 - Place bids on items
@@ -25,7 +24,6 @@ The application allows users to:
 * Place bids on items
 * Create their own listings (registered users)
 * Manage their profile and avatar
->>>>>>> fb6b7eab5947eb2008793dc07db721e8d81aabc7
 
 The project integrates with the **Noroff Auction API** for authentication, listings, and bidding functionality.
 
@@ -33,7 +31,6 @@ The project integrates with the **Noroff Auction API** for authentication, listi
 
 ## Key Features
 
-<<<<<<< HEAD
 - Browse auction listings
 - Search through listings
 - View detailed listing pages
@@ -55,13 +52,11 @@ The project integrates with the **Noroff Auction API** for authentication, listi
 * Update avatar
 * View bids on listings
 * Fully responsive design using **Bootstrap and SCSS**
->>>>>>> fb6b7eab5947eb2008793dc07db721e8d81aabc7
 
 ---
 
 ## Built With
 
-<<<<<<< HEAD
 - **HTML5**
 - **JavaScript (Vanilla JS)**
 - **Bootstrap 4/5**
@@ -79,7 +74,6 @@ The project integrates with the **Noroff Auction API** for authentication, listi
 * **Fetch API**
 * **Node.js**
 * **PostCSS**
->>>>>>> fb6b7eab5947eb2008793dc07db721e8d81aabc7
 
 ---
 
@@ -119,7 +113,6 @@ The application will run locally based on your configuration.
 
 ## Project Resources
 
-<<<<<<< HEAD
 - **Gantt Chart:** (Add project planning link here)
 - **Design Prototype:** (Add Figma or Adobe XD link here)
 - **Style Guide:** (Add link if available)
@@ -133,7 +126,6 @@ The application will run locally based on your configuration.
 * **Kanban Board:** (Add GitHub project board link)
 * **Repository:** [SP2 Resit Auction](https://github.com/OH2021/SP2-Resit)
 * **Hosted Demo (Live Site):** (Add Netlify/Vercel link here)
->>>>>>> fb6b7eab5947eb2008793dc07db721e8d81aabc7
 
 ---
 
@@ -151,7 +143,6 @@ To suggest improvements:
 
 ## Contact
 
-<<<<<<< HEAD
 - **GitHub:** [ole-henrik-haug](https://github.com/OH2021)
 - **Email:** [ole.henrik.haug@gmail.com](mailto:ole.henrik.haug@gmail.com)
 - **LinkedIn:** [Ole Henrik Haug](https://www.linkedin.com/in/ole-henrik-haug-8a17751b9/)
@@ -159,7 +150,6 @@ To suggest improvements:
 * **GitHub:** [ole-henrik-haug](https://github.com/OH2021)
 * **Email:** [ole.henrik.haug@gmail.com](mailto:ole.henrik.haug@gmail.com)
 * **LinkedIn:** [Ole Henrik Haug](https://www.linkedin.com/in/ole-henrik-haug-8a17751b9/)
->>>>>>> fb6b7eab5947eb2008793dc07db721e8d81aabc7
 
 ---
 
@@ -171,7 +161,6 @@ This project was created for educational purposes as part of the Noroff Frontend
 
 ## Acknowledgments
 
-<<<<<<< HEAD
 - Noroff Frontend Development Program
 - Noroff Auction API documentation
 - **Bootstrap** documentation
@@ -181,4 +170,3 @@ This project was created for educational purposes as part of the Noroff Frontend
 * Noroff Auction API documentation
 * **Bootstrap** documentation
 * JavaScript documentation
->>>>>>> fb6b7eab5947eb2008793dc07db721e8d81aabc7
