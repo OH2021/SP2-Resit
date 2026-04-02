@@ -18,7 +18,6 @@ The application allows users to:
 - Place bids on items
 - Create their own listings (registered users)
 - Manage their profile and avatar
-=======
 * Browse available auction listings
 * View detailed item pages
 * Place bids on items
@@ -41,7 +40,6 @@ The project integrates with the **Noroff Auction API** for authentication, listi
 - Update avatar
 - View bids on listings
 - Fully responsive design using **Bootstrap and SCSS**
-=======
 * Browse auction listings
 * Search through listings
 * View detailed listing pages
