@@ -22,9 +22,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   let listing;
 
   try {
-    // Fetch the listing with bids and seller
+    // Fetch the listing with bids (including user info) and seller
     const res = await request(
-      `/auction/listings/${listingId}?_bids=true&_seller=true`,
+      `/auction/listings/${listingId}?_bids=true&_seller=true&_bidder=true`,
     );
     listing = res.data;
 
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       .map(
         (bid) =>
           `<li class="list-group-item">
-             ${bid.user?.name || "Unknown"} bid $${bid.amount}
+             <strong>${bid.bidder?.name || bid.user?.name || "Unknown"}</strong> bid <strong>$${bid.amount}</strong>
            </li>`,
       )
       .join("");
@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
       // Reload listing to update bids
       const updatedRes = await request(
-        `/auction/listings/${listingId}?_bids=true&_seller=true`,
+        `/auction/listings/${listingId}?_bids=true&_seller=true&_bidder=true`,
       );
       listing = updatedRes.data;
       displayBids(listing.bids);
