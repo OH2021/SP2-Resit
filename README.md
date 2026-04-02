@@ -1,8 +1,5 @@
 # SP2 Resit Auction
 
-<<<<<<< HEAD
-![Auction App Screenshot](path-to-screenshot.png)
-=======
 <img width="2559" height="1317" alt="sp2-resit-screenshot" src="https://github.com/user-attachments/assets/2d209a08-5ac1-4de1-b735-774fc39a439c" />
 
 >>>>>>> fb6b7eab5947eb2008793dc07db721e8d81aabc7
