@@ -81,11 +81,9 @@ class="btn btn-secondary"
 class="img-fluid rounded"
 ```
 
-**Placeholder image example:**
+**Screenshot:**
 
-```
 <img width="1925" height="1087" alt="screenshot_profile" src="https://github.com/user-attachments/assets/fa454c6a-ee02-4e05-ac18-5b2953b96181" />
-```
 
 ## 6. Form Fields & Inputs
 
