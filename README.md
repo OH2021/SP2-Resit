@@ -90,9 +90,9 @@ The application will run locally based on your configuration.
 - **Gantt Chart:** (Add project planning link here)
 - **Design Prototype:** (Add Figma or Adobe XD link here)
 - **Style Guide:** (https://github.com/OH2021/SP2-Resit/blob/main/STYLE_GUIDE.md)
-- **Kanban Board:** (Add GitHub project board link)
-- **Repository:** [SP2 Resit Auction](https://github.com/OH2021/SP2-Resit)
-- **Hosted Demo (Live Site):** (Add Netlify/Vercel link here)
+- **Kanban Board:** (https://github.com/users/OH2021/projects/4/views/1)
+- **Repository:** (https://github.com/OH2021/SP2-Resit)
+- **Hosted Demo (Live Site):** (https://sp2-resit.netlify.app/index.html)
 
 ---
 
