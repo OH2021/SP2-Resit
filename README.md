@@ -43,11 +43,9 @@ The project integrates with the **Noroff Auction API** for authentication, listi
 - **HTML5**
 - **JavaScript (Vanilla JS)**
 - **Bootstrap 4/5**
-- **SCSS (Sass)**
 - **Noroff Auction API**
 - **Fetch API**
 - **Node.js**
-- **PostCSS**
 
 ---
 
