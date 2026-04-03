@@ -85,9 +85,8 @@ The application will run locally based on your configuration.
 
 ## Project Resources
 
-- **Gantt Chart:** [Uploading[InternetShortcut]
-URL=https://learning.noroff.no/mod/assign/view.php?id=28119&action=editsubmission#
- trello_gantt_placker_export_202604021133.pdf.url…]()
+- **Gantt Chart:** (https://learning.noroff.no/mod/assign/view.php?id=28119&action=editsubmission#
+ trello_gantt_placker_export_202604021133.pdf.url…]())
 
 - **Design Prototype:** (https://xd.adobe.com/view/b19b36d0-b016-4393-a0a0-331ddfd7a294-e4c8/)
 - **Style Guide:** (https://github.com/OH2021/SP2-Resit/blob/main/STYLE_GUIDE.md)
