@@ -34,7 +34,7 @@ The project integrates with the **Noroff Auction API** for authentication, listi
 - View and update user profile
 - Update avatar
 - View bids on listings
-- Fully responsive design using **Bootstrap and SCSS**
+- Fully responsive design using **Bootstrap**
 
 ---
 
